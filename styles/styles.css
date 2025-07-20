@@ -148,11 +148,14 @@ main > section{
   .teams{
     flex-direction: column;
   }
-  .team-img-container, .facts-container{
+  .team-img-container, 
+  .facts-container, 
+  .sponsors-company{
     grid-template-columns: 1fr;
   }
 
-  .facts-container{
+  .facts-container, 
+  .sponsors-company{
     justify-items: center;
     gap: 24px;
   }
@@ -168,6 +171,12 @@ main > section{
     flex-direction: column;
   }
   .our-features{
-    margin: 0 auto;
+    margin: 50px auto;
+  }
+  .sponsors-company, 
+  .facts-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
   }
 }
